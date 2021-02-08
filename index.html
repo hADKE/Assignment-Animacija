@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assignment Animacija</title>
+<style>
+    body{
+        background-color: #050210;
+    }
+    #circle1{
+        position: absolute;
+        
+        width: 500px;
+        height: 500px;
+        margin: 150px 400px;
+        border-radius: 100%;
+        background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+        
+        animation-name: rotate;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+        
+        
+    }
+    #circle2{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        margin: 200px 450px;
+        border-radius: 100%;
+        background-color: #050210;
+    }
+    #circle3{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        margin: 200px 450px;
+        border-radius: 100%;
+        background-color: #0b051f;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+
+    }
+        #container>div:nth-child(1){
+
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        margin:150px 400px;
+        border-radius: 100%;
+        background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+        filter: blur(40px);
+        animation-name: rotate;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg)
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes pulse{
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+</style>
+</head>
+<body>
+    
+    <div id="container">
+    
+        <div id="blur"></div>
+    
+        <div id="circle1"></div>
+        
+    
+        <div id="circle2"></div>
+            
+    
+        <div id="circle3"></div>
+    
+    
+</div>
+</body>
+</html>
